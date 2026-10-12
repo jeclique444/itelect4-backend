@@ -2,6 +2,11 @@
 
 Backend API for the Peer Tutoring Platform — Express + TypeScript + MongoDB.
 
+## Live URLs
+
+- **Backend API:** https://itelect4-backend-neon.vercel.app
+- **Frontend App:** https://itelect4-project-two.vercel.app
+
 ## Tech Stack
 
 - **Express** — HTTP server
