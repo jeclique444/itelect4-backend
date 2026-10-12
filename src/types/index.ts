@@ -26,7 +26,12 @@ export interface Session {
   location: string;
   status: "active" | "cancelled" | "full";
 }
-
+export interface Course {
+  code:     string;
+  title:    string;
+  units:    number;
+  semester: string;
+}
 // ========================================
 // DERIVED TYPES
 // ========================================
@@ -42,4 +47,9 @@ export type SessionDoc = Omit<Session, "id" | "tutorId"> & {
 export type NewSessionBody = Pick<
   Session,
   "subject" | "description" | "duration" | "capacity" | "schedule" | "price" | "location"
+>;
+
+export type CourseDoc = Pick<
+  Course,
+  "code" | "title" | "units" | "semester"
 >;
